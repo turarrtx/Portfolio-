@@ -5,12 +5,45 @@
 }
 
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: #FBF8CC;
 }
 
 .head {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    
+    gap: 25%;
+    margin-top: 20px;
+}
+
+.head h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  color: rgb(0, 0, 75);
+
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-list li a {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    color: inherit;
+    color: rgb(0, 0, 75);
+}
+
+.icon a img {
+    width: 30px;
+    height: 30px;
+    mix-blend-mode: multiply;
+    color: rgb(0, 0, 75);
+
 }
