@@ -17,6 +17,12 @@ body {
     overflow-x: hidden;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .head {
     display: flex;
     justify-content: space-around;
@@ -95,3 +101,63 @@ body {
     margin-bottom: 40px;
 }
 
+.btn-resume {
+    display: inline-block;
+    padding: 15px 35px;
+    border: 1px solid var(--text-dark);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.btn-resume:hover {
+    background-color: var(--text-dark);
+    color: white;
+    transform: translate(-2px, -2px);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.image-wrapper {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 75, 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.decor-plus {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-size: 40px;
+    font-family: "Archivo Black";
+    color: #434310;
+}
+
+.decor-lines {
+    position: absolute;
+    bottom: 100px;
+    left: -20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #434310;
+    letter-spacing: 5px;
+    z-index: 3;
+}
