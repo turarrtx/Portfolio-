@@ -4,8 +4,17 @@
     box-sizing: border-box; 
 }
 
-body{
-    background-color: #FBF8CC;
+:root {
+    --bg-color: #FBF8CC;
+    --text-dark: #00004B;
+    --accent-color: #00004B;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    overflow-x: hidden;
 }
 
 .head {
@@ -47,3 +56,42 @@ body{
     color: rgb(0, 0, 75);
 
 }
+
+.home h2 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 70px;    
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80vh;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.greeting {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+
+.main-title {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 85px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.location {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
