@@ -11,12 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div id="loader">
+  <div class="loader-inner">
+    <span>G</span><span>T</span>
+  </div>
+</div>
     <div class="container">
-        <div class="head">
+        <div class="head" id="head">
             <h1>Ganiuly Turar</h1>
             <ul class="nav-list">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#head">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#work">Work</a></li>
             </ul>
@@ -25,8 +29,10 @@
                 <a href="https://x.com/?lang=ru"><img src="images/images (1).svg" alt="twitter"></a>
                 <a href="https://t.me/ta0ka"><img src="images/black-telegram-line-icon-communication-chat-message-photo-messenger-video-emoji-publications-subscribers-views-likes-comments-editorial_855332-4906.svg" alt="telegram"></a>
                 <a href="https://www.instagram.com/ganiulyturar?igsh=YTllOGV3OTFrcTcw&utm_source=qr"><img src="images/instagram-logo-icon_628407-1656.svg" alt="Instagram"></a>
+               <button id="theme-toggle">🌙</button>            
             </div>
 
+           
         </div>
 
                 <main class="hero">
@@ -46,7 +52,7 @@
             </div>
         </main>
 
-        <div class="about">
+        <div class="about" id="about">
             <h1>about.</h1>
             <p>Увлеченный разработчик из Казахстана. В данный момент учусь на 2 курсе по специальности ИКТ. Постоянно совершенствую навыки верстки и работы с Git. Моя цель — создавать удобные веб-приложения, которыми приятно пользоваться.</p>
             <div class="aboutText">
@@ -62,8 +68,7 @@
                 <p>Сейчас я учусь на 2 курсе, глубоко погружен в веб-разработку. Активно работаю над портфолио, осваиваю Flask для бэкенда и практикуюсь в создании сложных UI-компонентов. Веду проекты на GitHub и учусь работать в команде.</p>
             </div>
         </div>
-<!-- WORK секция -->
-<section class="work">
+<section class="work" id="work">
   <div class="work-content">
     <h1>work.</h1>
     <p>Проекты, над которыми я работал. Листайте фото внутри каждого.</p>
@@ -83,9 +88,8 @@
           </div>
           <div class="slider-dots"></div>
         </div>
-        <span class="work-date">November 24, 2024</span>
-        <h2>Portfolio Website</h2>
-        <p>Персональное портфолио на HTML/CSS с адаптивной вёрсткой и анимациями.</p>
+        <h2>Initial D</h2>
+        <p>Персональное портфолио об аниме Initial D , где показывают весь дух уличных гонок в опасных серпантинах Японии</p>
       </div>
 
       <div class="work-card">
@@ -101,17 +105,48 @@
           </div>
           <div class="slider-dots"></div>
         </div>
-        <span class="work-date">March 10, 2025</span>
-        <h2>Flask Web App</h2>
-        <p>Веб-приложение на Flask с авторизацией и REST API.</p>
+        <h2>Магазин продуктов с сеткой Grid</h2>
+        <p>Платформа для покупки продуктов с использованием CSS Grid</p>
       </div>
 
     </div>
   </div>
 </section>
 
+<section class="contact">
+  <div class="contact-container">
+    <h1>contact.</h1>
+    <div class="contact-image">
+      <img src="images/Jakob Wolitzki _ Programmer on Instagram_ “Happy Sunday!_ Hey, hope you doing great_ 🔥_ Just wanted to say that tomorrow I have the next exam from a module called _Clean Code_ So…”.jpg" alt="Фон: ручка и бумага">
+    </div>
+    <div class="contact-info">
+      <p>
+        Свяжитесь со мной, если у вас есть вопросы или предложения. Я всегда открыт для новых возможностей и сотрудничества.
+      </p>
+      <ul>
+        <li><a href="mailto:johndoe@mail.com">johndoe@mail.com</a></li>
+        <li><a href="https://twitter.com/johndoe" target="_blank">twitter.com/johndoe</a></li>
+        <li><a href="https://behance.com/johndoe" target="_blank">behance.com/johndoe</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div id="lightbox">
+    <button id="lightbox-close">✕</button>
+    <button id="lightbox-prev">←</button>
+    <button id="lightbox-next">→</button>
+    <img id="lightbox-img" src="" alt="">
+    <div id="lightbox-counter"></div>
+</div>
+<!-- Прогресс-бар скролла -->
+<div id="scroll-progress"></div>
+
+<!-- Кнопка наверх -->
+<button id="back-to-top">↑</button>
 
 
-<script src="/turar/sсript.js"></script>
+<script src="sсript.js"></script>
+
 </body>
 </html>
